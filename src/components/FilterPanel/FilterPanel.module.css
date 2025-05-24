@@ -1,0 +1,151 @@
+.panel {
+  max-width: 1260px;
+  padding: 84px 40px 56px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.selects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.selectGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-weight: 400;
+  line-height: 1.33333;
+  font-size: 12px;
+  color: #8d929a;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1px;
+}
+
+.mileageInput {
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 110px;
+  height: 44px;
+  background: #f7f7f7;
+  font-size: 16px;
+  color: #101828;
+  border: none;
+  outline: none;
+}
+
+.searchBtn {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  border-radius: 12px;
+  padding: 12px 51px;
+  width: 156px;
+  height: 44px;
+  background: #3470ff;
+}
+
+.searchBtn:hover {
+  background: #3564d1;
+}
+
+.selectBtn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #101828;
+  border-radius: 12px;
+  padding: 12px 16px;
+  width: 204px;
+  background: #f7f7f7;
+}
+
+.mileageInput::placeholder {
+  color: #101828;
+}
+.selectBtn option {
+  color: grey;
+}
+
+.selectBtn.selected {
+  color: #101828;
+}
+button {
+  border-radius: 12px;
+  padding: 12px;
+  width: 70px;
+  height: 44px;
+  background: #f7f7f7;
+  font-size: 16px;
+  color: #101828;
+  border: none;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .panel {
+    padding: 40px 20px 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .selects {
+    flex-direction: column;
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .selectGroup {
+    width: 100%;
+  }
+
+  .mileageInput,
+  .selectBtn,
+  .searchBtn,
+  button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .panel {
+    padding: 60px 30px 50px;
+  }
+
+  .selects {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .selectGroup {
+    min-width: 200px;
+  }
+
+  .mileageInput,
+  .selectBtn {
+    width: auto;
+  }
+
+  .searchBtn {
+    width: 140px;
+    padding: 12px 30px;
+  }
+}
